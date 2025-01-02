@@ -12,6 +12,21 @@ A Python-based project designed to extract text from PDF files, utilizing a comb
 - Includes Bag-of-Words (BoW) and TF-IDF analysis for textual data.
 - Visualizes word frequencies and importance using bar charts and pie charts.
 
+## What is BoW and TF-IDF?
+
+### Bag-of-Words (BoW)
+BoW is a text representation technique used in Natural Language Processing (NLP) to represent text data as a collection of words. It disregards grammar and word order but keeps track of the frequency of words in a document. In this approach:
+- A vocabulary of unique words is created from the text corpus.
+- Each document is represented as a vector indicating the frequency of each word in the vocabulary.
+
+### Term Frequency-Inverse Document Frequency (TF-IDF)
+TF-IDF is a statistical method used to evaluate the importance of a word in a document relative to a collection of documents (corpus). It assigns higher weights to words that appear frequently in a document but less frequently across other documents. TF-IDF is calculated as:
+- **Term Frequency (TF)**: The number of times a word appears in a document divided by the total words in that document.
+- **Inverse Document Frequency (IDF)**: The logarithm of the total number of documents divided by the number of documents containing the word.
+- The TF-IDF score is the product of TF and IDF.
+
+TF-IDF is widely used in text mining and information retrieval for tasks like document similarity and keyword extraction.
+
 ## Requirements
 
 ### Libraries
